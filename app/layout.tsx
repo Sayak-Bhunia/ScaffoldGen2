@@ -6,19 +6,7 @@ import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 
 const _inter = Inter({ subsets: ["latin"] })
-const _clashDisplay = localFont({
-  src: [
-    {
-      path: "../public/fonts/ClashDisplay-Regular.woff2",
-      weight: "400",
-    },
-    {
-      path: "../public/fonts/ClashDisplay-Bold.woff2",
-      weight: "700",
-    },
-  ],
-  variable: "--font-clash",
-})
+const _clashDisplay = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "ScaffoldGen CLI - Developer Tool",

@@ -2,14 +2,11 @@
 
 export default function LatestSection() {
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8">
+    <section className="px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <div className="relative py-20">
+        <div className="relative">
           {/* About ScaffoldGen CLI section below arc */}
           <div className="relative max-w-5xl mx-auto mb-20">
-            {/* Orange glow shadow behind the box */}
-            <div className="absolute -inset-2 bg-gradient-to-r from-orange-500/0 via-orange-500/20 to-orange-500/0 rounded-2xl blur-3xl -z-10"></div>
-
             {/* About section box */}
             <div className="grid lg:grid-cols-2 gap-12 items-start bg-gradient-to-br from-neutral-900/80 to-neutral-950/80 border border-orange-500/20 rounded-2xl p-8 backdrop-blur-sm">
               <div>

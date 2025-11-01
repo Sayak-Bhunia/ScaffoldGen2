@@ -1,10 +1,12 @@
 "use client"
 
+import Image from "next/image"
+
 import { ArrowDown } from "lucide-react"
 
 export default function Hero() {
   return (
-    <section className="relative py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+    <section className="relative py-20 pb-0 px-4 sm:px-6 lg:px-8 overflow-hidden">
       <div className="max-w-4xl mx-auto text-center">
         <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 text-white animate-fadeInUp font-clash">
           ScaffoldGen
@@ -23,31 +25,12 @@ export default function Hero() {
             Download for Windows
           </button>
         </div>
-
-        {/* Decorative arc */}
-        <div className="relative h-32 mb-8 flex items-center justify-center">
-          <svg viewBox="0 0 400 200" className="w-full max-w-2xl h-auto" preserveAspectRatio="xMidYMid meet">
-            <path
-              d="M 50 180 Q 200 20 350 180"
-              stroke="url(#arcGradient)"
-              strokeWidth="4"
-              fill="none"
-              strokeLinecap="round"
-            />
-            <defs>
-              <linearGradient id="arcGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" stopColor="#FF6B35" stopOpacity="0.3" />
-                <stop offset="50%" stopColor="#FF6B35" stopOpacity="1" />
-                <stop offset="100%" stopColor="#FF6B35" stopOpacity="0.3" />
-              </linearGradient>
-            </defs>
-          </svg>
+        {/* Orange glow shadow behind the box */}
+        <div className="flex justify-center">
+          <div className="w-full max-w-6xl relative h-116">
+            <Image src="/glow-ellipse.png" alt="Glowing ellipse" fill className="object-contain" priority />
+          </div>
         </div>
-      </div>
-
-      {/* Scroll indicator */}
-      <div className="flex justify-center mt-12 animate-bounce">
-        <ArrowDown className="w-6 h-6 text-orange-500" />
       </div>
     </section>
   )
